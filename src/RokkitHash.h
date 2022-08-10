@@ -1,6 +1,8 @@
 /*
  * RokkitHash - Arduino port for Paul Hsieh's "SuperFastHash"
  *
+ * https://github.com/SukkoPera/Arduino-Rokkit-Hash
+ *
  * A very quick hash function, (c) Paul Hsieh
  *
  * See http://www.azillionmonkeys.com/qed/hash.html for more information
@@ -39,10 +41,7 @@
 
 #include <inttypes.h>
 
-#define ROKKIT_ENABLE_8BIT_OPTIMIZATIONS
-//~ #define ROKKIT_ENABLE_FLASH_FUNCTIONS
-
-uint32_t rokkit (const char *data, uint16_t len);
+uint32_t rokkit(const char *data, uint16_t len);
 
 #ifdef ROKKIT_ENABLE_FLASH_FUNCTIONS
 
